@@ -6,6 +6,7 @@ import {
   ServicesH2,
   ServicesP,
 } from "../../BuyItem/BuyItemElements";
+import logo from "../../../images/hero.jpg";
 import axios from "axios";
 import { ethers } from "ethers";
 import { Button } from "../../../globalStyles";
@@ -106,7 +107,7 @@ const BuyItem = (props) => {
     <ServicesWrapper>
       {nfts.map((nft, i) => (
         <ServicesCard>
-          <ServicesIcon src={nft.image} />
+          <ServicesIcon src={logo} />
           <ServicesH2>{nft.name}</ServicesH2>
 
           <Button
