@@ -4,12 +4,12 @@ import { ChainId, DAppProvider } from "@usedapp/core";
 import GlobalStyle from "./globalStyles";
 
 const config = {
-  readOnlyChainId: ChainId.Rinkeby,
+  readOnlyChainId: ChainId.Mainnet,
   readOnlyUrls: {
-    [ChainId.Rinkeby]:
-      "https://rinkeby.infura.io/v3/d014af161a4b4ffbaa358366e232e2c8",
+    [ChainId.Mainnet]:
+      "https://mainnet.infura.io/v3/d014af161a4b4ffbaa358366e232e2c8",
   },
-  supportedChains: [ChainId.Rinkeby],
+  supportedChains: [ChainId.Mainnet],
 };
 const App = (props) => {
   return (
