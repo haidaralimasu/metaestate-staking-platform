@@ -45,12 +45,7 @@ const BuyItem = (props) => {
         console.log(j);
         const tokenUri = await contract.tokenURI(j);
         console.log(tokenUri);
-        const meta = await axios.get(tokenUri, {
-          headers: {
-            "Access-Control-Allow-Origin": "*",
-            "Access-Control-Allow-Methods": "GET,PUT,POST,DELETE,PATCH,OPTIONS",
-          },
-        });
+        const meta = await axios.get(tokenUri);
 
         console.log(meta.data.image);
         console.log(meta.data.image);
