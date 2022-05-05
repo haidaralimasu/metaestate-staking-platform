@@ -49,6 +49,7 @@ const BuyItem = (props) => {
 
         console.log(meta.data.image);
         console.log(meta.data.image);
+        console.log(meta.data.image);
         let item = {
           tokenId: j,
           image: meta.data.image,
